@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>API Geolocalización</title>
 </head>
 <body>
-  <div id="map"></div>
-  <button id="find_me">Encuentrame</button>
+  <nav class="container-fluid nav navbar">
+    <div class="row">
+      <div class="col-md-5 text-center">
+        <span class="glyphicon glyphicon-record"></span>
+        <input type="text">
+      </div>
+      <div class="col-md-5 text-center">
+        <span class="glyphicon glyphicon-send"></span>
+        <input type="text">
+      </div>
+      <div class="col-md-2 text-center">
+        <button id="find_me">Encuentrame</button>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="map" class="col-md-12">
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx8YDBp1_8q8an3zWxbNmXoXE5Dk9yQ8I&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx8YDBp1_8q8an3zWxbNmXoXE5Dk9yQ8I&callback=initMap&libraries=places">
   </script>
 </body>
 </html>
